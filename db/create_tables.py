@@ -13,7 +13,7 @@ class CreateTables:
                 user_id INTEGER PRIMARY KEY,
                 is_active BOOLEAN,
                 username TEXT,
-                registration_date TIMESTAMP,
+                registration_date DATE,
                 password TEXT
                 );
             """,
