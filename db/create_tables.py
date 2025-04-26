@@ -24,14 +24,14 @@ class CreateTables:
                 description TEXT,
                 price REAL,
                 category TEXT,
-                created_at TIMESTAMP
+                created_at DATE
             );
             """,
             """
             CREATE TABLE IF NOT EXISTS Orders(
                 order_id INTEGER PRIMARY KEY,
                 user_id INTEGER,
-                order_date TIMESTAMP,
+                order_date DATE,
                 total_amount INTEGER,
                 FOREIGN KEY (user_id) REFERENCES Users(user_id)
             );
