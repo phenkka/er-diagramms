@@ -41,7 +41,7 @@ class ExampleInsert():
         self.conn.commit()
 
     def insert_table(self, data, query):
-        self.conn.executemany(query, data)
+        self.cursor.executemany(query, data)
 
     def close(self):
         self.conn.close()
